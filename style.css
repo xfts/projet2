@@ -1,0 +1,364 @@
+body{
+    background: RGB(17,57.9,72.2);
+    color: white;
+}
+
+header{
+    display: flex;
+    margin: 0 20px 0 20px; 
+}
+#iconReservia{
+    width: 70%; 
+}
+#navigation{
+    width: 30%; 
+}
+
+main{
+    margin: 0 20px 0 20px; 
+}
+#container-1{
+    display:flex;
+    flex-direction: column;	
+}
+#post{
+    display: flex;
+}
+#iconLocalisation{
+    display: flex;	
+    border: 1.4px  RGB(94.9,94.9,94.9) solid;		
+    border-radius: 15px 0px 0px 15px ;
+    padding: 0 11px 0 11px ;
+    background-color: RGB(94.9,94.9,94.9);
+}
+#barreRecherche{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px RGB(94.9,94.9,94.9)solid;		
+    border-top: 1px RGB(94.9,94.9,94.9)solid;		
+}
+#barreRecherche form {
+    margin: 0px 0px 0 0 ;
+    padding: 16px 0 16px 0;
+}
+#Boutonrecherche{
+    display: flex;
+    align-items: center;
+    border-right: 1px RGB(94.9,94.9,94.9)solid;	
+    border-radius: 0 15px 15px 0 ;
+    padding: 0 13px 0 11px ;
+    background-color: #0065fc ;
+}
+#ulNavigation{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+#Divfiltres{
+    display:flex;
+    justify-content: flex-start;
+
+    margin-top: 17px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#Divfiltres i{
+    border: none ;
+    border-radius: 100px 100px 100px 100px;
+    padding: 10px 10px 10px 10px;
+    background-color: #deebff;
+}
+.filtres{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 22px 0 33px; 
+    justify-content: space-around;
+}
+#f2, #f3, #f4, #f5{
+
+    border: 2px solid RGB(85.1,85.1,85.1);
+    border-radius: 0px 30px 30px 0px;
+
+    margin:auto;
+    padding: 10px 12px 10px 2px;	
+}
+
+#logements500 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+#logements500 p {
+    margin-left: 22px;
+}
+
+#logements500 i {
+    border: solid #f2f2f2 2px;
+    border-radius: 12px 12px 12px 12px;
+    padding: 6px 10px 5px 10px;
+}
+.fas,
+.fa-info,
+.fa-child {
+color: #0065fc;
+}
+
+#sectionBoite1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#article1{
+    width: 60%;
+    border: 1.4px  RGB(94.9,94.9,94.9) solid;		
+    border-radius: 15px 15px 15px 15px ;
+    
+    background-color: grey;
+}
+
+//a regler demain
+//#article1 > .imageBoite{
+    width: 30%;
+    height: 50%;
+
+    border: solid white 4px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+.imageBoite{
+    width: 30%;
+    height: 50%;
+
+    border: solid white 4px;
+    border-radius: 10px 10px 10px 10px;
+
+    margin: 10px 0 20px 0;
+    
+    color: black;
+    background-color: white; 
+}
+.imageBoite1{
+    width: 95%;
+    height: 50%;
+
+    border: solid white 4px;
+    border-radius: 10px 10px 10px 10px;
+
+    margin: 10px 0px 20px 0;
+
+    display: flex;
+    
+    color: black;
+    background-color: white; 
+}
+.image1{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+    border : none;
+    border-radius: 6px 0 0 6px;
+}
+
+#article2{
+    margin: 0 0 47px 0 ;
+
+}
+.imageBoite2{
+    width: 22%;
+    height: 300px;
+
+    border: solid white 2px;
+    border-radius: 19px 19px 16px 16px ; 
+    
+    color: black;
+}
+.image2{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+
+    border-radius: 16px 16px 0px 0px;
+    margin: 0 0 8px 0;
+}
+
+.deuxRectangles{
+    width: 22%;
+    color: black;
+}
+.boiteRec1{
+    border : solid white 1px;
+    border-radius: 16px 16px 16px 16px; 
+    margin: 0 0 23px 0;
+
+}
+.boiteRec2{
+    border : solid white 1px;
+    border-radius: 16px 16px 16px 16px; 
+    margin: 0 0 23px 0;
+}
+.imageRec1{
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+
+    border-radius: 16px 16px 0px 0px;
+    margin: 0 0 8px 0;
+    
+}
+.imageRec2{
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+
+    border-radius: 16px 16px 0px 0px;
+    margin: 0 0 8px 0;
+}
+
+
+aside , #article1, #article1 > h2{
+    padding: 0 28px 0 28px;
+}
+//pb ici
+//.articleBoite1 > .image{
+    width: 100%;
+    height: 130px;
+}
+aside {
+    width: 28%;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    /*  justify-content */ 
+    border: 1.4px  RGB(94.9,94.9,94.9) solid;		
+    border-radius: 15px 15px 15px 15px ;
+
+    background-color: grey;
+}
+
+.articleBoite1{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+
+
+.image{
+    width: 100%;
+    border : white 2px;
+    border-radius: 7px 7px 0 0 ;
+    object-fit: cover;
+    height: 130px;
+}
+
+
+#articleBoite2{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.asideBoite{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+//    align-items: center;
+}
+
+span{
+    display: flex;
+    padding: 0px 10px 5px 10px ;
+}
+
+/*
+.img1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width:100%;
+    height:100%;
+}
+
+
+ .para1, .para2, .para3
+{
+
+    flex:0.1;
+
+}
+
+section > article{
+    width: 70%;
+}
+
+*/
+
+
+
+
+footer
+{
+    display:flex;
+    justify-content: space-between;
+
+    border: solid grey 1px;
+    background: grey;
+    font-size:120%;	
+
+    padding: 40px 0 0 0 ;
+}
+
+#foot1{
+    display:flex;
+    flex-direction:	column;	
+}
+
+#foot2{
+    display:flex;
+    flex-direction:	column;	
+}
+
+#foot3{
+    display:flex;
+    flex-direction:	column;	
+}
+
+nav li{ 
+    padding:3% 0px 3% 0px;	
+    width :20%;
+    text-align: center;
+}
+
+a{
+    color:orange;
+    text-decoration:none;
+}
+
+a:hover{
+    color:green;
+}
+
+strong{
+    font-size: 120%;
+}
+
+.spanGras{
+    font-weight: bold;
+}
+
+.etoile{
+    color: RGB(0,101,252);
+    padding: 0px 10px 5px 10px ;
+}
+#etoile{color: grey;
+
