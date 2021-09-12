@@ -62,10 +62,10 @@ main{
     font-size: 14px;
     font-weight: bold;
 }
-#Divfiltres i{
-    border: none ;
-    border-radius: 100px 100px 100px 100px;
-    padding: 10px 10px 10px 10px;
+#Divfiltres  i{
+    border:none; 
+    border-radius:100%; 
+    padding: 14px 14px 14px 14px;
     background-color: #deebff;
 }
 .filtres{
@@ -74,14 +74,23 @@ main{
     align-items: center;
     margin: 0 22px 0 33px; 
     justify-content: space-around;
+    border: solid pink 2px;
+    border-radius: 30px 30px 30px 30px;
+}
+.boitefiltres{
+    display: flex;
+    justify-content: center;
 }
 #f2, #f3, #f4, #f5{
 
-    border: 2px solid RGB(85.1,85.1,85.1);
-    border-radius: 0px 30px 30px 0px;
+//    border-top: 2px solid RGB(85.1,85.1,85.1);
+//    border-right: 2px solid RGB(85.1,85.1,85.1);
+//    border-bottom: 2px solid RGB(85.1,85.1,85.1);
+//    border-radius: 0px 30px 30px 0px;
 
-    margin:auto;
-    padding: 10px 12px 10px 2px;	
+    margin: 0 ;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;    
 }
 
 #logements500 {
@@ -93,12 +102,12 @@ main{
 }
 
 #logements500 p {
-    margin-left: 22px;
+    margin-left: 16px;
 }
 
-#logements500 i {
+#logements500  i {
     border: solid #f2f2f2 2px;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 120px 120px 120px 120px;
     padding: 6px 10px 5px 10px;
 }
 .fas,
@@ -121,15 +130,6 @@ color: #0065fc;
     background-color: grey;
 }
 
-//a regler demain
-//#article1 > .imageBoite{
-    width: 30%;
-    height: 50%;
-
-    border: solid white 4px;
-    border-radius: 10px 10px 10px 10px;
-
-}
 
 .imageBoite{
     width: 30%;
@@ -142,6 +142,13 @@ color: #0065fc;
     
     color: black;
     background-color: white; 
+}
+.image{
+    width: 100%;
+    border : white 2px;
+    border-radius: 7px 7px 0 0 ;
+    object-fit: cover;
+    height: 130px;
 }
 .imageBoite1{
     width: 95%;
@@ -251,14 +258,6 @@ aside {
 
 
 
-.image{
-    width: 100%;
-    border : white 2px;
-    border-radius: 7px 7px 0 0 ;
-    object-fit: cover;
-    height: 130px;
-}
-
 
 #articleBoite2{
     display: flex;
@@ -362,3 +361,12 @@ strong{
 }
 #etoile{color: grey;
 
+//a regler demain
+//#article1 > .imageBoite{
+    width: 30%;
+    height: 50%;
+
+    border: solid white 4px;
+    border-radius: 10px 10px 10px 10px;
+
+}
