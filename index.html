@@ -12,68 +12,57 @@
 
 
 <body>
-    
-<header>
+
+<header class="header">
     <div id="iconReservia">
 	<a href="images/logo/ReserviaGrand.png"><img src="images/logo/Reservia.svg" alt="logo Reservia"/></a>
     </div>
-    <div id="navigation">
-	<nav>
-	    <ul id="ulNavigation">
-		<li><a href="#">Hébergements</a></li>
-		<li><a href="#">Activités</a></li>
-		<li><a href="#">S'inscrire</a></li>
-	    </ul>
-	</nav>
-    </div>
+    <nav id="navigation">
+	<a class="navHaut" href="#">Hébergements</a>
+	<a class="navHaut" href="#">Activités</a>
+	<a class="navHautSpe" href="#">S'inscrire</a>
+    </nav>
 </header>
 <main>
-    <div id="container-1"> 
-	<div id="pStrong">
-	    <p><strong>Trouvez votre hébergement pour des vacances de rêve	</strong></br>En plein centre ville ou en pleine nature
-	    </p>
-	</div>
-	<div id="post">
-	    <div id="iconLocalisation">
-		<img src="images/logo/iconLocalisation.svg" alt="logo de Reservia"/>
+	<div id="container-1"> 
+	    <div id="pStrong">
+		<p><strong>Trouvez votre hébergement pour des vacances de rêve	</strong></br>En plein centre ville ou en pleine nature
+		</p>
 	    </div>
-	    <div id="barreRecherche">
-		<form method="post" action="recherche.php">
-		    <input type="search" id="search" name="search" size="23" maxlength="30" value="Marseille, France"/>
-		</form>
-	    </div>
-	    <div id="Boutonrecherche">
-		    <a href="#"><strong>Rechercher</strong></a>
-	    </div>	
-	</div>
-	<div id="Divfiltres"><!--changer filter id et class -->
-	    <h3 id="f1"><strong>Filtres</strong></h3>
-	    <div class="filtres">	
-		<div class="boitefitres"> 
+	    <form class="Post" action="recherche.html" method="GET">
+		<span class="iconLocalisation">
+			<i class="fas fa-map-marker-alt iconLocalisationIcon"></i>
+		</span>
+		<input class="barreRecherche" type="search" placeholder="Marseille, France" size="1">
+		<button class="boutonRecherche">
+		    <span class="boutonRechercheText">Rechercher</span>
+		</button>
+	    </form>
+	    <div id="Divfiltres">
+		<h3 id="f1"><strong>Filtres</strong></h3>
+		<div class="filtres">	
 		    <i id="f" class="fas fa-money-bill-wave"></i>
 		    <h3 id="f2">Économique</h3>
 		</div>
+		<div class="filtres">	
+		    <i id="f" class="fas fa-child"></i>
+		    <h3 id="f3">Familial</h3>
+		</div>
+		<div class="filtres">	
+		    <i id="f" class="fas fa-heart"></i>
+		    <h3 id="f4">Romantique</h3>
+		</div>
+		<div class="filtres">	
+		    <i id="f" class="fas fa-dog"></i>
+		    <h3 id="f5">Animaux autorisés</h3>
+		</div>
 	    </div>
-	    <div class="filtres">	
-		<i id="f" class="fas fa-child"></i>
-		<h3 id="f3">Familial</h3>
-	    </div>
-	    <div class="filtres">	
-		<i id="f" class="fas fa-heart"></i>
-		<h3 id="f4">Romantique</h3>
-	    </div>
-	    <div class="filtres">	
-		<i id="f" class="fas fa-dog"></i>
-		<h3 id="f5">Animaux autorisés</h3>
+	    <div id="logements500"> 
+		<i class="fas fa-info" aria-hidden="true"></i>
+		<p>Plus de 500 logements sont disponibles dans cette ville</p>
 	    </div>
 	</div>
-	<div id="logements500"> 
-	    <i class="fas fa-info" aria-hidden="true"></i>
-	    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-	</div>
-    </div>
-    <section>
-	<div id="sectionBoite1">
+        <section>
 	    <article id="article1">
 		<h2>Hébergements à Marseille</h2>
 		    <div class="articleBoite1">
@@ -153,7 +142,7 @@
 		<h4>Afficher plus</h4>
 	    </article>
 	    <aside>
-		<h2>Les plus populaires</h2>
+		<h2 class="h2Courbe">Les plus populaires<i id="fasCourbe" class="fas fa-chart-line"></i></h2>
 		    <div class="asideBoite">
 			<div class="imageBoite1">
 			    <img src="images/hebergements/4_small/11.jpg" class="image1"  alt="Hotel Le soleil du matin"/>
@@ -199,7 +188,6 @@
 			</div>
 		    </div>
 	    </aside>
-	</div>
 	<article id="article2">
 	    <h2>Activités à Marseille</h2>
 		<div id="articleBoite2">
@@ -238,7 +226,7 @@
 <footer>
     <div id="foot1">
 	<ul style="list-style-type:none;">
-	    <li>A propos</li>
+	    <h4>A propos</h4>
 	    <li><a href="#">Fonctionnement du site</a></li>
 	    <li><a href="#">Conditions générales de vente</a></li>
 	    <li><a>Données et confidentialité</a></li>
@@ -246,14 +234,14 @@
     </div>
     <div id="foot2">
 	<ul style="list-style-type:none;">
-	    <li>Nos hébergements</li>
+	    <h4>Nos hébergements</h4>
 	    <li><a href="#">Charte qualité</a></li>
 	    <li><a href="#">Soumettre votre hôtel</a></li>
 	</ul>
     </div>
     <div id="foot3">
 	<ul style="list-style-type:none;">
-	    <li>Assistance</li>
+	    <h4>Assistance</h4>
 	    <li><a href="#">Centre d'aide</a></li>
 	    <li><a href="#">Nous contacter</a></li>
 	</ul>
@@ -271,13 +259,3 @@
 
 
 
-
-<!-- enlever p2 et remplacer avec div 
-	flex:wrap;
-	width:30%;
-	laissez de la marge IMPORTANNNTTT !!
-	
-ajpouter main 
-
-
--->

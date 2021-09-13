@@ -1,22 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+
+@media (min-width: 1100px){
+    #iconReservia{
+	width: 30%;
+    }
+    #navigation{
+	width: 67%;
+	justify-content: flex-end;
+    }
+    #article1 {
+	width: 60%;
+    }
+    .imageBoite{
+	width: 30%;
+    }
+    aside {
+	width: 28%;
+    }
+    
+}
+@media (min-width: 650px) and (max-width: 1099.98px){
+    #iconReservia{
+	width: 30%;
+    }
+    #navigation{
+	width: 67%;
+	justify-content: flex-end;
+    }
+    #article1, aside {
+	width: 100%
+    }
+    .imageBoite{
+	width: 45%;
+	height: auto !important;
+    }
+    aside{
+	flex-wrap: nowrap !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+    }
+    #articleBoite2{
+	flex-wrap: wrap !important;
+	justify-content: space-around !important;
+    }
+    .imageBoite2{
+	width: 44% !important;
+	margin-bottom: 17px;
+    }
+    .deuxRectangles{
+	width: 44% !important;
+	margin-bottom: 17px;
+    }
+}
+
+@media (max-width: 649.98px){
+    #iconReservia{
+	width: 70%;
+    }
+    #navigation{
+	width: 97%;
+    }
+    .navHaut, .navHautSpe{
+	width: 100%
+    }
+    .navHaut:hover {
+	border-top: 3px solid #0065fc;
+	border-bottom: 3px solid #0065fc !important;
+	color: black;/* ne fonctionne pas */
+	padding: 17px 10px 17px 20px;
+    }
+    .navHautSpe:hover{
+	font-weight: normal;
+        border-top: 3px solid #0065fc !important;
+	border-bottom: 3px solid #0065fc !important;
+	padding: 17px 10px 17px 20px;
+
+    }
+    #Divfiltres{
+	font-size: 14px!important;
+    }
+    #Divfiltres > h3{
+	width: 96%;
+    }
+    section {
+	justify-content: center !important;
+    } 
+    #article1, aside {
+	width: 100%
+    }
+    .imageBoite{
+	width: 95%;
+	height: auto !important;
+    }
+    aside{
+	width : auto !important;
+	height: 100% !important;
+	justify-content: center !important;
+    }
+    .asideBoite{
+	width: 100% !important;
+	height: 100% !important;
+    }
+    .imageBoite1{
+	height: 100% !important;
+    }
+    #article2 {
+	width: auto !important;
+    }
+    #articleBoite2{
+	flex-wrap: wrap !important;
+	justify-content: center !important;
+    }
+    .imageBoite2, .deuxRectangles{
+	width: 94% !important;
+	margin-bottom: 17px;
+    }
+    footer{
+	flex-wrap: wrap !important;
+	align-items: center !important;
+    }
+    #foot1, #foot2, #foot3{
+	width :auto !important;
+    }
+
+}
+
+
+
+
+
+
 body{
-    background: RGB(17,57.9,72.2);
-    color: white;
+    font-family: "Raleway", "Sans serif";
+    margin: 0; /*ne fonctionne pas (attention a la synthax ":")*/
 }
 
 header{
     display: flex;
-    margin: 0 20px 0 20px; 
+    flex-wrap: wrap;
+    margin: 0 0 10px 0;
 }
 #iconReservia{
-    width: 70%; 
+    padding: 10px 0 0 12px;
 }
 #navigation{
-    width: 30%; 
+    display: flex;
+    align-items: baseline;
+}
+.navHaut, .navHautSpe{
+    padding: 20px 10px 20px 20px;
+    text-decoration: none;
+    color: #609ffd; 
+/*    color: black;//pb aqui */
+}
+.navHautSpe{
+    font-weight: bold;
 }
 
 main{
     margin: 0 20px 0 20px; 
 }
+
+#container-1{
+    display:flex;
+    flex-direction: column;	
+}
+.Post {
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+}
+.iconLocalisation {
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+.barreRecherche {
+    box-sizing: border-box;
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+}
+.boutonRecherche {
+    background-color: #0065FC;
+    color: white;
+    
+    border: none;
+    border-radius: 0 16px 16px 0;
+    
+    padding: 0 11px 0 16px; 
+   
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    cursor: pointer;
+}
+#Divfiltres{
+    display:flex;
+    flex-wrap: wrap;
+
+    margin-top: 17px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#Divfiltres  i{
+ 
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+.filtres{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 22px 10px 33px; 
+    border: solid #d9d9d9 2px;
+    border-radius: 30px 30px 30px 30px;
+}
+.boitefiltres{
+    display: flex;
+    justify-content: center;
+}
+#f2, #f3, #f4, #f5{
+    margin: 0 ;
+    padding: 0px 14px 0px 12px;
+    font-weight: bold;    
+}
+#logements500 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 37px;
+}
+#logements500 p {
+    margin-left: 16px;
+}
+#logements500  i {
+    border: solid grey 1px;
+    border-radius: 100%; 
+    padding: 6px 10px 5px 10px;
+    background-color: #ffff;
+}
+
+#fasCourbe{
+    color: black;
+}
+.fas,.fa-info,.fa-child {
+    color: #0065fc;
+
+}
+.rechercheVille{
+    border: solid 3px pink;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#post form{
+    border: pink solid 4px;
+    width: 100px;
+    height: 40px;    
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section span {
+    display: flex;
+    padding: 0px 10px 5px 10px ;
+}
+#article1 {
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #f2f2f2;
+}
+
+.imageBoite{
+    height: 207px;
+
+    border: solid white 4px;
+    border-radius: 10px 10px 10px 10px;
+
+    margin: 10px 0 20px 0;
+    
+    color: black;
+    background-color: white; 
+}
+.image{
+    width: 100%;
+    border : white 2px;
+    border-radius: 7px 7px 0 0 ;
+    object-fit: cover;
+    height: 130px;
+}
+.imageBoite1{
+    width: 94%;
+    height: 148px;
+
+    border: solid white 4px;
+    border-radius: 10px 10px 10px 10px;
+
+    margin: 0px 0px 30px 0;
+
+    display: flex;
+    
+    color: black;
+    background-color: white; 
+}
+.image1{
+    width: 132px;
+    height: 100%; 
+    object-fit: cover;
+
+    border : none;
+    border-radius: 6px 0 0 6px;
+}
+
+#article2{
+    margin: 0 0 47px 0 ;
+}
+.imageBoite2{
+    width: 22%;
+    
+    border: none; 
+    border-radius: 19px 19px 16px 16px ; 
+    
+    color: black;
+}
+.image2{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+
+    border-radius: 16px 16px 0px 0px;
+    margin: 0 0 7px 0;
+}
+
+.deuxRectangles{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+}
+.boiteRec1{
+    width: 100%;
+   /* height: 40%;*/
+    border :none; 
+    border-radius: 16px 16px 16px 16px; 
+
+}
+.boiteRec2{
+    width: 100%;
+    height: 40%;
+    border : none; 
+    border-radius: 16px 16px 16px 16px; 
+}
+.imageRec1{
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+
+    border-radius: 16px 16px 0px 0px;
+    margin: 0 0 7px 0;
+    
+}
+.imageRec2{
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+
+    border-radius: 16px 16px 0px 0px;
+    margin: 0 0 7px 0;
+}
+
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    border: none; 
+    border-radius: 15px 15px 15px 15px ;
+    background-color: #f2f2f2 ;
+
+}
+.h2Courbe{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+aside , #article1{
+    padding: 0 28px 0 28px;
+}
+.articleBoite1{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+
+
+
+#articleBoite2{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.asideBoite{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /*    align-items: center; */
+}
+
+
+
+
+footer
+{
+    display:flex;
+    background: #f2f2f2;
+    flex-wrap:wrap;
+}
+footer ul li{
+    padding: 0 0 10px 0;
+}
+#foot1{
+    width: 30%; 
+    display:flex;
+    flex-direction: column;	
+}
+#foot2{
+    width: 30%; 
+    display:flex;
+    flex-direction: column;	
+}
+#foot3{
+    width: 30%; 
+    display:flex;
+    flex-direction: column;	
+}
+
+
+
+
+
+a{
+    color: black;
+    text-decoration:none;
+}
+a:hover{
+    color:green;
+}
+
+.filtres:hover { /*il faut le mettre en bas, !no se poque! */
+    background-color: #d9d9d9;
+    transform: scale(1.027);
+}
+.navHaut:hover {
+    border-top: 3px solid #0065fc;
+    padding: 17px 10px 20px 20px;
+    color: black;/* ne fonctionne pas */
+
+}
+.navHautSpe:hover{
+    border-top: 3px solid #0065fc;
+    padding: 17px 10px 20px 20px;
+
+}
+
+.imageBoite:hover {
+    transform: scale(1.027);
+}
+.imageBoite1:hover {
+    transform: scale(1.027);
+}
+.imageBoite2:hover {
+    transform: scale(1.027);
+}
+.boiteRec1:hover {
+    transform: scale(1.027);
+}
+.boiteRec2:hover {
+    transform: scale(1.027);
+}
+.imageBoite, .imageBoite1, .imageBoite2, .boiteRec1, .boiteRec2{
+    box-shadow: 0 0 3px #e5e5e5;/* a modifier */
+}
+strong{
+    font-size: 120%;
+}
+
+.spanGras{
+    font-weight: bold;
+    
+}
+
+.etoile{
+    color: RGB(0,101,252);
+    padding: 0px 10px 5px 10px ;
+}
+#etoile{
+    color: #d9d9d9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* container-1 ancien prototype:
+*
+*
+*
+*
+
 #container-1{
     display:flex;
     flex-direction: column;	
@@ -49,11 +624,6 @@ main{
     padding: 0 13px 0 11px ;
     background-color: #0065fc ;
 }
-#ulNavigation{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-}
 #Divfiltres{
     display:flex;
     justify-content: flex-start;
@@ -81,17 +651,6 @@ main{
     display: flex;
     justify-content: center;
 }
-#f2, #f3, #f4, #f5{
-
-//    border-top: 2px solid RGB(85.1,85.1,85.1);
-//    border-right: 2px solid RGB(85.1,85.1,85.1);
-//    border-bottom: 2px solid RGB(85.1,85.1,85.1);
-//    border-radius: 0px 30px 30px 0px;
-
-    margin: 0 ;
-    padding: 0px 10px 0px 10px;
-    font-weight: bold;    
-}
 
 #logements500 {
     margin-top: 1%;
@@ -110,174 +669,29 @@ main{
     border-radius: 120px 120px 120px 120px;
     padding: 6px 10px 5px 10px;
 }
-.fas,
-.fa-info,
-.fa-child {
-color: #0065fc;
-}
 
-#sectionBoite1 {
-    display: flex;
-    justify-content: space-between;
+.fas,.fa-info,.fa-child {
+    color: #0065fc;
 }
 
 
-#article1{
-    width: 60%;
-    border: 1.4px  RGB(94.9,94.9,94.9) solid;		
-    border-radius: 15px 15px 15px 15px ;
-    
-    background-color: grey;
+//pb ici
+//.articleBoite1 > .image{
+    width: 100%;
+    height: 130px;
 }
 
-
-.imageBoite{
+//a regler demain
+//#article1 > .imageBoite{
     width: 30%;
     height: 50%;
 
     border: solid white 4px;
     border-radius: 10px 10px 10px 10px;
 
-    margin: 10px 0 20px 0;
-    
-    color: black;
-    background-color: white; 
-}
-.image{
-    width: 100%;
-    border : white 2px;
-    border-radius: 7px 7px 0 0 ;
-    object-fit: cover;
-    height: 130px;
-}
-.imageBoite1{
-    width: 95%;
-    height: 50%;
-
-    border: solid white 4px;
-    border-radius: 10px 10px 10px 10px;
-
-    margin: 10px 0px 20px 0;
-
-    display: flex;
-    
-    color: black;
-    background-color: white; 
-}
-.image1{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-
-    border : none;
-    border-radius: 6px 0 0 6px;
 }
 
-#article2{
-    margin: 0 0 47px 0 ;
-
-}
-.imageBoite2{
-    width: 22%;
-    height: 300px;
-
-    border: solid white 2px;
-    border-radius: 19px 19px 16px 16px ; 
-    
-    color: black;
-}
-.image2{
-    width: 100%;
-    height: 85%;
-    object-fit: cover;
-
-    border-radius: 16px 16px 0px 0px;
-    margin: 0 0 8px 0;
-}
-
-.deuxRectangles{
-    width: 22%;
-    color: black;
-}
-.boiteRec1{
-    border : solid white 1px;
-    border-radius: 16px 16px 16px 16px; 
-    margin: 0 0 23px 0;
-
-}
-.boiteRec2{
-    border : solid white 1px;
-    border-radius: 16px 16px 16px 16px; 
-    margin: 0 0 23px 0;
-}
-.imageRec1{
-    width: 100%;
-    height: 155px;
-    object-fit: cover;
-
-    border-radius: 16px 16px 0px 0px;
-    margin: 0 0 8px 0;
-    
-}
-.imageRec2{
-    width: 100%;
-    height: 105px;
-    object-fit: cover;
-
-    border-radius: 16px 16px 0px 0px;
-    margin: 0 0 8px 0;
-}
-
-
-aside , #article1, #article1 > h2{
-    padding: 0 28px 0 28px;
-}
-//pb ici
-//.articleBoite1 > .image{
-    width: 100%;
-    height: 130px;
-}
-aside {
-    width: 28%;
-    display: flex;
-    flex: wrap;
-    flex-direction: column;
-    /*  justify-content */ 
-    border: 1.4px  RGB(94.9,94.9,94.9) solid;		
-    border-radius: 15px 15px 15px 15px ;
-
-    background-color: grey;
-}
-
-.articleBoite1{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    align-items: baseline;
-}
-
-
-
-
-#articleBoite2{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.asideBoite{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-//    align-items: center;
-}
-
-span{
-    display: flex;
-    padding: 0px 10px 5px 10px ;
-}
-
-/*
+//
 .img1
 {
     display: flex;
@@ -300,73 +714,12 @@ section > article{
     width: 70%;
 }
 
-*/
 
 
 
 
-footer
-{
-    display:flex;
-    justify-content: space-between;
-
-    border: solid grey 1px;
-    background: grey;
-    font-size:120%;	
-
-    padding: 40px 0 0 0 ;
-}
-
-#foot1{
-    display:flex;
-    flex-direction:	column;	
-}
-
-#foot2{
-    display:flex;
-    flex-direction:	column;	
-}
-
-#foot3{
-    display:flex;
-    flex-direction:	column;	
-}
-
-nav li{ 
-    padding:3% 0px 3% 0px;	
-    width :20%;
-    text-align: center;
-}
-
-a{
-    color:orange;
-    text-decoration:none;
-}
-
-a:hover{
-    color:green;
-}
-
-strong{
-    font-size: 120%;
-}
-
-.spanGras{
-    font-weight: bold;
-}
-
-.etoile{
-    color: RGB(0,101,252);
-    padding: 0px 10px 5px 10px ;
-}
-#etoile{color: grey;
-
-//a regler demain
-//#article1 > .imageBoite{
-    width: 30%;
-    height: 50%;
-
-    border: solid white 4px;
-    border-radius: 10px 10px 10px 10px;
-
-}
+*
+*
+*
+*
+ */
