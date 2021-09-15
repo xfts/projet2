@@ -3,15 +3,18 @@
 
 
 @media (min-width: 1100px){
+    body{
+	max-width: 1400px;
+    }
     #iconReservia{
 	width: 30%;
     }
-    #navigation{
-	width: 67%;
-	justify-content: flex-end;
+    .navHautSpe{
+	margin-left: 20px !important;
     }
     #article1 {
 	width: 60%;
+	margin-bottom: 15px !important;
     }
     .imageBoite{
 	width: 30%;
@@ -19,15 +22,22 @@
     aside {
 	width: 28%;
     }
-    
+    #article2{
+	width: 100% !important;
+    }
 }
 @media (min-width: 650px) and (max-width: 1099.98px){
     #iconReservia{
-	width: 30%;
+	width: 30% !important;
     }
     #navigation{
-	width: 67%;
-	justify-content: flex-end;
+	width: 39% !important;
+	display: flex;
+	order: 1 !important;
+    }.navHautSpe{
+	width: 10% !important;    
+	font-weight: bold;
+	order: 2 !important;
     }
     #article1, aside {
 	width: 100%
@@ -56,17 +66,38 @@
 }
 
 @media (max-width: 649.98px){
+    header{
+	display: flex;
+	justify-content: space-between !important;
+	flex-wrap: wrap !important;
+	align-items: center;
+	margin-bottom: 0px !important;
+    }
     #iconReservia{
-	width: 70%;
+	padding: 10px 0 0 12px;
+    	width: 50% !important;
+    } 
+    .navHautSpe{
+	width: 30% !important;    
+	font-weight: bold;
+	order: 1 !important;
     }
     #navigation{
-	width: 97%;
+	width: 100% !important;
+	display: flex;
+	padding-bottom: 20px !important;
+	order: 2 !important;
     }
-    .navHaut, .navHautSpe{
-	width: 100%
-    }
+    .navHaut{
+	width: 100% !important;
+	padding: 20px 10px 20px 20px;
+	text-decoration: none;
+	text-align: center;
+	color: #609ffd; 
+	/*    color: black;//pb aqui */
+    }    
     .navHaut:hover {
-	border-top: 3px solid #0065fc;
+	border-top:none !important; 
 	border-bottom: 3px solid #0065fc !important;
 	color: black;/* ne fonctionne pas */
 	padding: 17px 10px 17px 20px;
@@ -74,7 +105,6 @@
     .navHautSpe:hover{
 	font-weight: normal;
         border-top: 3px solid #0065fc !important;
-	border-bottom: 3px solid #0065fc !important;
 	padding: 17px 10px 17px 20px;
 
     }
@@ -86,9 +116,13 @@
     }
     section {
 	justify-content: center !important;
-    } 
+    }
     #article1, aside {
-	width: 100%
+	width: 100%;
+	margin-bottom: 15px !important;
+    }
+    #article1{
+	order: 2;
     }
     .imageBoite{
 	width: 95%;
@@ -98,6 +132,7 @@
 	width : auto !important;
 	height: 100% !important;
 	justify-content: center !important;
+	order: 1;
     }
     .asideBoite{
 	width: 100% !important;
@@ -107,6 +142,7 @@
 	height: 100% !important;
     }
     #article2 {
+	order:3;
 	width: auto !important;
     }
     #articleBoite2{
@@ -116,13 +152,22 @@
     .imageBoite2, .deuxRectangles{
 	width: 94% !important;
 	margin-bottom: 17px;
+	font-size: 11px !important;
+	overflow: hidden !important;
+    }
+/*    .image2{
+         margin: 0 0 0 0 !important;	
+    }*/
+    .boiteRec1, .boiteRec2{
+	font-size: 11px !important;
+	overflow: hidden !important;
     }
     footer{
 	flex-wrap: wrap !important;
 	align-items: center !important;
     }
     #foot1, #foot2, #foot3{
-	width :auto !important;
+	width :97% !important;
     }
 
 }
@@ -135,29 +180,39 @@
 body{
     font-family: "Raleway", "Sans serif";
     margin: 0; /*ne fonctionne pas (attention a la synthax ":")*/
+    background-color: #333333;
+    color: white;
 }
-
 header{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 10px 0;
-}
+    align-items: center;
+    margin-bottom: 20px;
+    }
 #iconReservia{
+    width: 60%;
     padding: 10px 0 0 12px;
 }
-#navigation{
-    display: flex;
-    align-items: baseline;
+.navHautSpe{
+    width: 7%;    
+    font-weight: bold;
+    color: #609ffd; 
+    order: 2;
 }
-.navHaut, .navHautSpe{
+#navigation{
+    width: 21%;
+    display: flex;
+    order: 1;
+}
+.navHaut{
+    width: 100%;
     padding: 20px 10px 20px 20px;
     text-decoration: none;
+    text-align: center;
     color: #609ffd; 
 /*    color: black;//pb aqui */
 }
-.navHautSpe{
-    font-weight: bold;
-}
+
 
 main{
     margin: 0 20px 0 20px; 
@@ -284,6 +339,7 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 section span {
     display: flex;
@@ -471,10 +527,6 @@ a{
     color: black;
     text-decoration:none;
 }
-a:hover{
-    color:green;
-}
-
 .filtres:hover { /*il faut le mettre en bas, !no se poque! */
     background-color: #d9d9d9;
     transform: scale(1.027);
