@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 
-
 @media (min-width: 1100px){
     body{
 	max-width: 1400px;
+	margin: auto !important;
     }
     #iconReservia{
 	width: 30%;
     }
-    .navHautSpe{
-	margin-left: 20px !important;
+    .navHautSpeTel{
+	display: none !important;
     }
     #article1 {
 	width: 60%;
@@ -25,7 +25,13 @@
     #article2{
 	width: 100% !important;
     }
+    .boiteRec1, .boiteRec2{
+	margin-bottom: 15px !important;
+    }
 }
+
+
+
 @media (min-width: 650px) and (max-width: 1099.98px){
     #iconReservia{
 	width: 30% !important;
@@ -34,11 +40,10 @@
 	width: 39% !important;
 	display: flex;
 	order: 1 !important;
-    }.navHautSpe{
-	width: 10% !important;    
-	font-weight: bold;
-	order: 2 !important;
     }
+    .navHautSpeTel{
+	display: none !important;
+    }    
     #article1, aside {
 	width: 100%
     }
@@ -63,7 +68,66 @@
 	width: 44% !important;
 	margin-bottom: 17px;
     }
+    .boiteRec1, .boiteRec2{
+	margin-bottom: 15px !important;
+    }
 }
+
+@media (max-width: 376.98px){
+   .imageBoite1{
+	height: 100% !important;
+    } 
+}	
+
+@media  (max-width: 385px){
+    .imageBoite2{
+	width: 281.97px !important;
+	height: 200px !important;
+	margin-bottom: 15px;
+    }
+    .deuxRectangles{
+	width: 563.94px !important;
+	/*height: 632px !important;*/
+	align-items: center !important;
+    }
+    .imageRec1,.imageRec2{
+        width: 100% !important; 
+	height: 155px !important;	
+    }
+    .boiteRec1, .boiteRec2{
+	font-size: 11px !important;
+	overflow: hidden !important;
+	width: 274px !important;
+	height: 200px !important;
+	margin-bottom: 10px;
+    }
+
+}
+@media (min-width:386px) and (max-width: 649.97px){
+    .imageBoite2{
+	width: 381.97px !important;
+	height: 200px !important;
+	margin-bottom: 15px;
+    }
+    .deuxRectangles{
+	width: 563.94px !important;
+	/*height: 632px !important;*/
+	align-items: center !important;
+    }
+    .imageRec1,.imageRec2{
+        width: 100% !important; 
+	height: 155px !important;	
+    }
+    .boiteRec1, .boiteRec2{
+	font-size: 11px !important;
+	overflow: hidden !important;
+	width: 384px !important;
+	height: 200px !important;
+	margin-bottom: 10px;
+    }
+
+}
+
 
 @media (max-width: 649.98px){
     header{
@@ -77,11 +141,7 @@
 	padding: 10px 0 0 12px;
     	width: 50% !important;
     } 
-    .navHautSpe{
-	width: 30% !important;    
-	font-weight: bold;
-	order: 1 !important;
-    }
+    
     #navigation{
 	width: 100% !important;
 	display: flex;
@@ -102,11 +162,18 @@
 	color: black;/* ne fonctionne pas */
 	padding: 17px 10px 17px 20px;
     }
-    .navHautSpe:hover{
+    .navHautSpe{
+	display: none !important;
+    }
+    .navHautSpeTel{
+	width: 30% !important;    
+	font-weight: bold;
+	order: 1 !important;
+    }
+    .navHautSpeTel:hover{
 	font-weight: normal;
         border-top: 3px solid #0065fc !important;
 	padding: 17px 10px 17px 20px;
-
     }
     #Divfiltres{
 	font-size: 14px!important;
@@ -119,7 +186,7 @@
     }
     #article1, aside {
 	width: 100%;
-	margin-bottom: 15px !important;
+	margin-bottom: 35px !important;
     }
     #article1{
 	order: 2;
@@ -138,29 +205,16 @@
 	width: 100% !important;
 	height: 100% !important;
     }
-    .imageBoite1{
-	height: 100% !important;
-    }
     #article2 {
 	order:3;
 	width: auto !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     }
     #articleBoite2{
-	flex-wrap: wrap !important;
-	justify-content: center !important;
-    }
-    .imageBoite2, .deuxRectangles{
-	width: 94% !important;
-	margin-bottom: 17px;
-	font-size: 11px !important;
-	overflow: hidden !important;
-    }
-/*    .image2{
-         margin: 0 0 0 0 !important;	
-    }*/
-    .boiteRec1, .boiteRec2{
-	font-size: 11px !important;
-	overflow: hidden !important;
+	flex-direction: column !important;
+	align-items: center !important;
     }
     footer{
 	flex-wrap: wrap !important;
@@ -191,7 +245,7 @@ header{
     width: 60%;
     padding: 10px 0 0 12px;
 }
-.navHautSpe{
+.navHautSpeTel{
     width: 7%;    
     font-weight: bold;
     color: #609ffd; 
@@ -202,7 +256,7 @@ header{
     display: flex;
     order: 1;
 }
-.navHaut{
+.navHaut, .navHautSpe {
     width: 100%;
     padding: 20px 10px 20px 20px;
     text-decoration: none;
@@ -414,7 +468,6 @@ section span {
     width: 22%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     color: black;
 }
 .boiteRec1{
@@ -498,6 +551,7 @@ footer
     background: #f2f2f2;
     flex-wrap:wrap;
 }
+
 footer ul li{
     padding: 0 0 10px 0;
 }
@@ -516,8 +570,13 @@ footer ul li{
     display:flex;
     flex-direction: column;	
 }
-
-
+.titreFooter{
+    font-weight: bold;
+    padding-bottom: 24px;
+}
+footer a:hover{
+    color: orange;
+}
 
 
 
@@ -529,15 +588,15 @@ a{
     background-color: #d9d9d9;
     transform: scale(1.027);
 }
-.navHaut:hover {
+.navHaut:hover, .navHautSpe:hover {
     border-top: 3px solid #0065fc;
     padding: 17px 10px 20px 20px;
     color: black;/* ne fonctionne pas */
 
 }
-.navHautSpe:hover{
+.navHautSpeTel:hover{
     border-top: 3px solid #0065fc;
-    padding: 17px 10px 20px 20px;
+    padding: 17px 10px 20px 0px;
 
 }
 
@@ -568,6 +627,11 @@ strong{
     
 }
 
+.etoileGris{
+     color: #d9d9d9 !important;
+}
+
+
 .etoile{
     color: RGB(0,101,252);
     padding: 0px 10px 5px 10px ;
@@ -576,6 +640,11 @@ strong{
     color: #d9d9d9;
 }
 
+
+
+
+
+#inutile{display:none;} /* j'aimerai vraiment comprendre pk c'est un robot qui me corrige mal ?*/
 
 
 
