@@ -14,13 +14,15 @@
     }
     #article1 {
 	width: 60%;
-	margin-bottom: 15px !important;
     }
     .imageBoite{
 	width: 30%;
     }
     aside {
 	width: 28%;
+    }
+    #article1{
+	margin-bottom: 15px !important;
     }
     #article2{
 	width: 100% !important;
@@ -55,6 +57,7 @@
 	flex-wrap: nowrap !important;
 	flex-direction: column !important;
 	justify-content: center !important;
+	margin-top: 30px !important;
     }
     #articleBoite2{
 	flex-wrap: wrap !important;
@@ -101,7 +104,7 @@
 	height: 200px !important;
 	margin-bottom: 10px;
     }
-
+    
 }
 @media (min-width:386px) and (max-width: 649.97px){
     .imageBoite2{
@@ -130,6 +133,11 @@
 
 
 @media (max-width: 649.98px){
+    body{
+	/*width: 100%;
+	max-width: 256px !important;
+	margin: auto !important;*/
+    }
     header{
 	display: flex;
 	justify-content: space-between !important;
@@ -186,10 +194,10 @@
     }
     #article1, aside {
 	width: 100%;
-	margin-bottom: 35px !important;
     }
     #article1{
 	order: 2;
+	background-color: white !important;
     }
     .imageBoite{
 	width: 95%;
@@ -200,6 +208,7 @@
 	height: 100% !important;
 	justify-content: center !important;
 	order: 1;
+	border-radius : 0 0 0 0!important;
     }
     .asideBoite{
 	width: 100% !important;
@@ -207,10 +216,13 @@
     }
     #article2 {
 	order:3;
-	width: auto !important;
-	display: flex;
+	width: 100% !important;
+/*	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center;*/
+    }
+    #article2 > h2{
+	padding-left: 10px ;	
     }
     #articleBoite2{
 	flex-direction: column !important;
@@ -445,7 +457,7 @@ section span {
 }
 
 #article2{
-    margin: 0 0 47px 0 ;
+    margin: 20px 0 47px 0 ;
 }
 .imageBoite2{
     width: 22%;
@@ -647,198 +659,3 @@ strong{
 #inutile{display:none;} /* j'aimerai vraiment comprendre pk c'est un robot qui me corrige mal ?*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* container-1 ancien prototype:
-*
-*
-*
-*
-
-#container-1{
-    display:flex;
-    flex-direction: column;	
-}
-#post{
-    display: flex;
-}
-#iconLocalisation{
-    display: flex;	
-    border: 1.4px  RGB(94.9,94.9,94.9) solid;		
-    border-radius: 15px 0px 0px 15px ;
-    padding: 0 11px 0 11px ;
-    background-color: RGB(94.9,94.9,94.9);
-}
-#barreRecherche{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px RGB(94.9,94.9,94.9)solid;		
-    border-top: 1px RGB(94.9,94.9,94.9)solid;		
-}
-#barreRecherche form {
-    margin: 0px 0px 0 0 ;
-    padding: 16px 0 16px 0;
-}
-#Boutonrecherche{
-    display: flex;
-    align-items: center;
-    border-right: 1px RGB(94.9,94.9,94.9)solid;	
-    border-radius: 0 15px 15px 0 ;
-    padding: 0 13px 0 11px ;
-    background-color: #0065fc ;
-}
-#Divfiltres{
-    display:flex;
-    justify-content: flex-start;
-
-    margin-top: 17px;
-    font-size: 14px;
-    font-weight: bold;
-}
-#Divfiltres  i{
-    border:none; 
-    border-radius:100%; 
-    padding: 14px 14px 14px 14px;
-    background-color: #deebff;
-}
-.filtres{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 22px 0 33px; 
-    justify-content: space-around;
-    border: solid pink 2px;
-    border-radius: 30px 30px 30px 30px;
-}
-.boitefiltres{
-    display: flex;
-    justify-content: center;
-}
-
-#logements500 {
-    margin-top: 1%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 37px;
-}
-
-#logements500 p {
-    margin-left: 16px;
-}
-
-#logements500  i {
-    border: solid #f2f2f2 2px;
-    border-radius: 120px 120px 120px 120px;
-    padding: 6px 10px 5px 10px;
-}
-
-.fas,.fa-info,.fa-child {
-    color: #0065fc;
-}
-
-
-//pb ici
-//.articleBoite1 > .image{
-    width: 100%;
-    height: 130px;
-}
-
-//a regler demain
-//#article1 > .imageBoite{
-    width: 30%;
-    height: 50%;
-
-    border: solid white 4px;
-    border-radius: 10px 10px 10px 10px;
-
-}
-
-//
-.img1
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    width:100%;
-    height:100%;
-}
-
-
- .para1, .para2, .para3
-{
-
-    flex:0.1;
-
-}
-
-section > article{
-    width: 70%;
-}
-
-
-
-
-
-*
-*
-*
-*
- */
