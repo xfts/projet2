@@ -21,9 +21,6 @@
     aside {
 	width: 28%;
     }
-    #article1{
-	margin-bottom: 15px !important;
-    }
     #article2{
 	width: 100% !important;
     }
@@ -75,62 +72,6 @@
 	margin-bottom: 15px !important;
     }
 }
-
-@media (max-width: 376.98px){
-   .imageBoite1{
-	height: 100% !important;
-    } 
-}	
-
-@media  (max-width: 385px){
-    .imageBoite2{
-	width: 281.97px !important;
-	height: 200px !important;
-	margin-bottom: 15px;
-    }
-    .deuxRectangles{
-	width: 563.94px !important;
-	/*height: 632px !important;*/
-	align-items: center !important;
-    }
-    .imageRec1,.imageRec2{
-        width: 100% !important; 
-	height: 155px !important;	
-    }
-    .boiteRec1, .boiteRec2{
-	font-size: 11px !important;
-	overflow: hidden !important;
-	width: 274px !important;
-	height: 200px !important;
-	margin-bottom: 10px;
-    }
-    
-}
-@media (min-width:386px) and (max-width: 649.97px){
-    .imageBoite2{
-	width: 381.97px !important;
-	height: 200px !important;
-	margin-bottom: 15px;
-    }
-    .deuxRectangles{
-	width: 563.94px !important;
-	/*height: 632px !important;*/
-	align-items: center !important;
-    }
-    .imageRec1,.imageRec2{
-        width: 100% !important; 
-	height: 155px !important;	
-    }
-    .boiteRec1, .boiteRec2{
-	font-size: 11px !important;
-	overflow: hidden !important;
-	width: 384px !important;
-	height: 200px !important;
-	margin-bottom: 10px;
-    }
-
-}
-
 
 @media (max-width: 649.98px){
     body{
@@ -227,6 +168,24 @@
     #articleBoite2{
 	flex-direction: column !important;
 	align-items: center !important;
+    }
+    .imageBoite2{
+	width: 90% !important;
+	margin-bottom: 20px !important;
+    }
+    .imageBoite2 > img{
+	height: 220px !important;
+
+    }
+    .deuxRectangles {
+	width : 90% !important;
+	margin-bottom: 20px !important;
+    }
+    .boiteRec1{
+	margin-bottom: 20px !important;
+    }
+    .boiteRec1 > img , .boiteRec2 > img{
+	height: 220px !important;
     }
     footer{
 	flex-wrap: wrap !important;
@@ -651,6 +610,9 @@ strong{
 #etoile{
     color: #d9d9d9;
 }
+
+
+
 
 
 
