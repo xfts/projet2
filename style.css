@@ -7,7 +7,7 @@
 	margin: auto !important;
     }
     #iconReservia{
-	width: 30%;
+	width: 65%;
     }
     .navHautSpeTel{
 	display: none !important;
@@ -33,10 +33,10 @@
 
 @media (min-width: 650px) and (max-width: 1099.98px){
     #iconReservia{
-	width: 30% !important;
+	width: 45% !important;
     }
     #navigation{
-	width: 39% !important;
+	width: 55% !important;
 	display: flex;
 	order: 1 !important;
     }
@@ -87,7 +87,7 @@
 	margin-bottom: 0px !important;
     }
     #iconReservia{
-	padding: 10px 0 0 12px;
+	padding: 10px 0 0 0px;
     	width: 50% !important;
     } 
     
@@ -211,10 +211,11 @@ header{
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 8px;
     }
 #iconReservia{
     width: 60%;
-    padding: 10px 0 0 12px;
+    padding: 0px 0 0 0px;
 }
 .navHautSpeTel{
     width: 7%;    
@@ -223,7 +224,7 @@ header{
     order: 2;
 }
 #navigation{
-    width: 21%;
+    width: 40%;
     display: flex;
     order: 1;
 }
