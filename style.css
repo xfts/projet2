@@ -7,10 +7,21 @@
 	margin: auto !important;
     }
     #iconReservia{
-	width: 65%;
+	width: 50% !important;
+    }
+    #navigation{
+	justify-content: flex-end !important;
+    }
+    .navHaut{
+	width: 35% !important;
     }
     .navHautSpeTel{
-	display: none !important;
+	width: 10% !important;
+    }
+    .navHautSpeTel:hover {
+	border-top: 3px solid #0065fc !important;
+	color: #0065FC; 
+	padding: 17px 10px 17px 20px;
     }
     #article1 {
 	width: 60%;
@@ -33,16 +44,22 @@
 
 @media (min-width: 650px) and (max-width: 1099.98px){
     #iconReservia{
-	width: 45% !important;
+	width: 40% !important;
     }
     #navigation{
-	width: 55% !important;
-	display: flex;
-	order: 1 !important;
+	justify-content: flex-end !important;
+    }
+    .navHaut{
+	width: 35% !important;
     }
     .navHautSpeTel{
-	display: none !important;
-    }    
+	width: 10% !important;
+    }
+    .navHautSpeTel:hover {
+	border-top: 3px solid #0065fc !important;
+	color: #0065FC; 
+	padding: 17px 10px 17px 20px;
+    }  
     #article1, aside {
 	width: 100%
     }
@@ -88,10 +105,8 @@
 	margin-left: 0px !important;
     }
     #iconReservia{
-	padding: 0px 0 0 20px !important;
     	width: 50% !important;
     } 
-    
     #navigation{
 	width: 100% !important;
 	display: flex;
@@ -99,21 +114,13 @@
 	order: 2 !important;
     }
     .navHaut{
-	width: 100% !important;
-	padding: 20px 10px 20px 20px;
-	text-decoration: none;
-	text-align: center;
-	color: #609ffd; 
-	/*    color: black;//pb aqui */
-    }    
+	border-bottom: 3px solid #f2f2f2 !important;
+    }
     .navHaut:hover {
 	border-top:none !important; 
 	border-bottom: 3px solid #0065fc !important;
-	color: black;/* ne fonctionne pas */
+	color: #0065FC; 
 	padding: 17px 10px 17px 20px;
-    }
-    .navHautSpe{
-	display: none !important;
     }
     .navHautSpeTel{
 	width: 30% !important;    
@@ -123,7 +130,12 @@
     .navHautSpeTel:hover{
 	font-weight: normal;
         border-top: 3px solid #0065fc !important;
-	padding: 17px 10px 17px 20px;
+    }
+    .boutonRecherche{
+	border-radius: 30% !important;
+    }
+    .boutonRechercheText{
+	display:  none !important;	
     }
     #Divfiltres{
 	font-size: 14px!important;
@@ -206,23 +218,25 @@
 body{
     font-family: "Raleway", "Sans serif";
     margin: 0; /*ne fonctionne pas (attention a la synthax ":")*/
+    
+    color: white;/*eye*/
+    background-color: #222325; /*eye*/
 }
 header{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
     margin-left: 18px;
     }
 #iconReservia{
-    width: 60%;
-    padding: 0px 0 0 0px;
+    padding: 0px 0 0 20px;
 }
 .navHautSpeTel{
     width: 7%;    
     font-weight: bold;
     color: #609ffd; 
     order: 2;
+    text-align : center ;
 }
 #navigation{
     width: 40%;
@@ -234,10 +248,11 @@ header{
     padding: 20px 10px 20px 20px;
     text-decoration: none;
     text-align: center;
-    color: #609ffd; 
-/*    color: black;//pb aqui */
 }
-
+.navHautSpe{
+    font-weight: bold;
+    color: #0065FC;
+}
 
 main{
     margin: 0 20px 0 20px; 
@@ -364,7 +379,7 @@ section span {
 #article1 {
     border: none;
     border-radius: 15px 15px 15px 15px;
-    background-color: #f2f2f2;
+    background-color:#222325 ;/*eye #f2f2f2 */
 }
 
 .imageBoite{
@@ -410,6 +425,7 @@ section span {
 
 #article2{
     margin: 20px 0 47px 0 ;
+    background-color: #222325; /*eye*/
 }
 .imageBoite2{
     width: 22%;
@@ -471,8 +487,8 @@ aside {
     flex-wrap: wrap;
     border: none; 
     border-radius: 15px 15px 15px 15px ;
-    background-color: #f2f2f2 ;
 
+    background-color: #222325; /*eye #f2f2f2 */
 }
 .h2Courbe{
     width: 100%;
@@ -555,8 +571,7 @@ a{
 .navHaut:hover, .navHautSpe:hover {
     border-top: 3px solid #0065fc;
     padding: 17px 10px 20px 20px;
-    color: black;/* ne fonctionne pas */
-
+    color: #0065FC;
 }
 .navHautSpeTel:hover{
     border-top: 3px solid #0065fc;
@@ -608,3 +623,4 @@ strong{
 
 
 
+a{color: white;}/*eye*/
