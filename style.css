@@ -131,11 +131,19 @@
 	font-weight: normal;
         border-top: 3px solid #0065fc !important;
     }
+    .barreRecherche{
+	width: 100% !important;
+    }
     .boutonRecherche{
-	border-radius: 30% !important;
+	border-radius: 10px 10px 10px 10px !important;
+	padding: 0 16px 0 16px !important;
+	margin-left: -30px !important;
     }
     .boutonRechercheText{
 	display:  none !important;	
+    }
+    .fa-search:before{
+	color: white;
     }
     #Divfiltres{
 	font-size: 14px!important;
@@ -219,8 +227,6 @@ body{
     font-family: "Raleway", "Sans serif";
     margin: 0; /*ne fonctionne pas (attention a la synthax ":")*/
     
-    color: white;/*eye*/
-    background-color: #222325; /*eye*/
 }
 header{
     display: flex;
@@ -234,7 +240,7 @@ header{
 .navHautSpeTel{
     width: 7%;    
     font-weight: bold;
-    color: #609ffd; 
+    color: #0065fc; 
     order: 2;
     text-align : center ;
 }
@@ -273,6 +279,9 @@ main{
     border-radius: 15px 0 0 15px;
     text-align: center;
 }
+.fa-map-marker-alt:before {
+    color: black !important;
+}
 .barreRecherche {
     box-sizing: border-box;
     border-right: none;
@@ -292,7 +301,7 @@ main{
     border: none;
     border-radius: 0 16px 16px 0;
     
-    padding: 0 11px 0 16px; 
+    padding: 0 1px 0 16px; 
    
     font-weight: bold;
     font-family: "Raleway", "Sans serif";
@@ -379,7 +388,7 @@ section span {
 #article1 {
     border: none;
     border-radius: 15px 15px 15px 15px;
-    background-color:#222325 ;/*eye #f2f2f2 */
+    background-color:#f2f2f2;
 }
 
 .imageBoite{
@@ -425,7 +434,6 @@ section span {
 
 #article2{
     margin: 20px 0 47px 0 ;
-    background-color: #222325; /*eye*/
 }
 .imageBoite2{
     width: 22%;
@@ -488,7 +496,7 @@ aside {
     border: none; 
     border-radius: 15px 15px 15px 15px ;
 
-    background-color: #222325; /*eye #f2f2f2 */
+    background-color: #f2f2f2;
 }
 .h2Courbe{
     width: 100%;
@@ -623,4 +631,3 @@ strong{
 
 
 
-a{color: white;}/*eye*/
